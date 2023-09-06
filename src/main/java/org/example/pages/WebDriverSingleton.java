@@ -15,7 +15,8 @@ public class WebDriverSingleton {
     }
         public static WebDriver getInstance () throws MalformedURLException {
             if (INSTANCE == null) {
-                INSTANCE = new ChromeDriver();
+                ChromeOptions chromeOptions = new ChromeOptions();
+                INSTANCE = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub/"), chromeOptions);;
             }
             return INSTANCE;
         }

@@ -1,0 +1,14 @@
+This document explains how to setup local environment and run tests on the remote server in Docker container:
+
+1. Install Java 8+ , Maven latest version and Docker
+2. Download the project with all dependencies from GitHub: https://github.com/JuliaKosolap/AcademyBugs
+3. Open terminal and run the following command:
+docker run -d -p 4444:4444 --shm-size=2g selenium/standalone-chrome:3.141.59-20210607
+(Selenium Standalone server will run on http://localhost:4444/)
+4. In terminal go the directory where test project was saved
+5. Run the following command: mvn clean test
+(If you open you will see that Chrome session was started)
+
+6. After tests running is completed run Allure reports with the following command:
+allure serve allure-results
+(The Allure report will be opened in you browser and there you can see the results for tests running)
