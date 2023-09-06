@@ -7,4 +7,9 @@
             <class name="SortProductsTest"/>
         </classes>
     </test>
+    <test name="Add Product to Cart">
+        <classes>
+            <class name="AddProductToCart"/>
+        </classes>
+    </test>
 </suite>

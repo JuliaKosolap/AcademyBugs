@@ -2,6 +2,7 @@ import org.example.pages.FindBugsPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -9,7 +10,7 @@ import java.util.List;
 public class SortProductsTest extends BaseTest {
 
     @Test
-    public void checkProductsSortingByPrice() {
+    public void checkProductsSortingByPrice() throws MalformedURLException {
         // Open Find Bugs page, expand sorting list and select sort by price (Low-to-High)
         FindBugsPage findBugsPage = new FindBugsPage(driver);
         findBugsPage.sortProducts();
