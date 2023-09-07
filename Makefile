@@ -10,6 +10,8 @@ check-versions:
 	allure --version
 start-selenium-interactive:
 	docker run -p 4444:4444 --shm-size=2g selenium/standalone-chrome:3.141.59-20210607
+selenium-hub-interactive:
+	docker-compose up
 test:
 	mvn clean test
 test-results:
