@@ -1,0 +1,1 @@
+export PATH=$PWD/utilities/allure-2.24.0/bin:$PWD/utilities/apache-maven-3.9.4/bin/:$PATH

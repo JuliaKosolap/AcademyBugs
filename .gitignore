@@ -37,3 +37,11 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+
+### Current project
+.envrc
+*.tar.gz
+*.tgz
+utilities/
+allure-results/
