@@ -40,7 +40,6 @@ build/
 
 
 ### Current project
-allure-reports
 .envrc
 *.tar.gz
 *.tgz
